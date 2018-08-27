@@ -8,6 +8,7 @@ html, body {
 
 a{
   text-decoration: none;
+  border: black;
 }
 
 body {
@@ -130,7 +131,6 @@ body {
 
 
 .book-list{
-
 }
 
 .book-content{
@@ -140,6 +140,7 @@ body {
   border: 2px solid;
   margin: 0 100px;
   position: relative;
+  margin-bottom: 60px;
 }
 
 .thumbnail-book{
@@ -148,15 +149,99 @@ body {
 }
 
 .book-infor{
-  position: absolute;
   visibility: hidden;
-  background: grey;gf
-  top: 2;
-  left: 100%;
-  z-index: 1;
+
+}
+
+.book-infor h3{
+  text-decoration: none;
+  color: #000;
+}
+
+.book-infor p {
+  text-decoration: none;
+  color: #505256;
 }
 
 .book-content:hover .book-infor{
   visibility: visible;
-  border: 1px solid;
+  width: 120px;
+  height: 290px;
+  position: absolute;
+  background: lightgrey;
+  top: 0;
+  left: 202px;
+  padding: 5px;
+  z-index: 1;
+  font-size: 14px;
+  border: 1px dashed black;
+  border-left: transparent;
+  transition: 0.5s;
+}
+
+
+.clap{
+  margin: 40px 200px;
+  text-align: center;
+}
+
+.clap h3{
+  font-weight: 400;
+}
+
+.clap h3 span{
+  font-style: italic;
+}
+
+.clap button{
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #2b5ec4;
+  border-radius: 7px;
+}
+
+.clap button:hover{
+  background: #a6d9dd;
+  font-size: 24px;
+}
+
+.clap button:focus{
+  color: blue;
+}
+
+.linebreak{
+  margin-left: 70%;
+  border: 1px solid grey;
+}
+
+.contact-list{
+  float: right;
+
+}
+
+.contact-list a{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  margin: 20px;
+}
+
+.contact-list a:hover{
+  color: blue;
+  background: lightgrey;
+  transition: 1s;
+}
+
+.copyright{
+  margin-top: 90px;
+  margin-bottom: 20px;
+  text-align: center;
 }
